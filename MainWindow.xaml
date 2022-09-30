@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Cherednichenko_PR3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ПР3 Чередниченко" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="button1">
+            <Setter Property="Background" Value="Green"/>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
-        
+        <Button Content="Button" Style="{StaticResource button1}" Background="Red" HorizontalAlignment="Left" Margin="92,54,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" Style="{StaticResource button1}" HorizontalAlignment="Left" Margin="225,54,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" Style="{StaticResource button1}" HorizontalAlignment="Left" Margin="358,54,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
